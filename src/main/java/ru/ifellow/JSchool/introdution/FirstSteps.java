@@ -111,7 +111,7 @@ public class FirstSteps {
             return true;
         } else {
             for (int i = 0; i < array.length - 1; i++) {
-                if (isGreater(array[i + 1], array[i])) {
+                if (isGreater(array[i + 1], array[i]) || isEqual(array[i + 1], array[i])) {
                     return false;
                 }
             }
